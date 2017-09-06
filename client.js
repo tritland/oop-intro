@@ -19,7 +19,19 @@ fit(personShirtSize)  {
 
 let newT = new Shirt('medium', 'blue');
 
-console.log(newT.size);
-newT.fit('medium');
-newT.fit('small');
+// console.log(newT.size);
+// newT.fit('medium');
+// newT.fit('small');
 
+class ButtonUpShirt extends Shirt {
+    constructor(size, color, buttons){
+        super(size, color);
+        this.buttons = buttons;
+    }
+}
+
+    let TomNewShirt = new ButtonUpShirt('large', 'green', 8);
+
+    TomNewShirt.fit('large');
+    TomNewShirt.fit('small');
+    console.log(TomNewShirt);
